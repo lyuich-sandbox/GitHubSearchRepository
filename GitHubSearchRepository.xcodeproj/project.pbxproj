@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		721CB40A1E9B60DF003FD107 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721CB4091E9B60DF003FD107 /* main.swift */; };
+		72345D531E9B6B58002731D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72345D521E9B6B58002731D9 /* User.swift */; };
+		72345D551E9B6B60002731D9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72345D541E9B6B60002731D9 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		721CB4061E9B60DF003FD107 /* GitHubSearchRepository */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GitHubSearchRepository; sourceTree = BUILT_PRODUCTS_DIR; };
 		721CB4091E9B60DF003FD107 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		72345D521E9B6B58002731D9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		72345D541E9B6B60002731D9 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,19 @@
 		721CB4081E9B60DF003FD107 /* GitHubSearchRepository */ = {
 			isa = PBXGroup;
 			children = (
+				72345D511E9B6B3A002731D9 /* Response */,
 				721CB4091E9B60DF003FD107 /* main.swift */,
 			);
 			path = GitHubSearchRepository;
+			sourceTree = "<group>";
+		};
+		72345D511E9B6B3A002731D9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				72345D521E9B6B58002731D9 /* User.swift */,
+				72345D541E9B6B60002731D9 /* Repository.swift */,
+			);
+			name = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +135,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72345D531E9B6B58002731D9 /* User.swift in Sources */,
 				721CB40A1E9B60DF003FD107 /* main.swift in Sources */,
+				72345D551E9B6B60002731D9 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +271,7 @@
 				721CB40F1E9B60DF003FD107 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
