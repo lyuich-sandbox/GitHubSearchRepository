@@ -11,6 +11,7 @@
 		72345D531E9B6B58002731D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72345D521E9B6B58002731D9 /* User.swift */; };
 		72345D551E9B6B60002731D9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72345D541E9B6B60002731D9 /* Repository.swift */; };
 		723DC9721EA1045B0039139D /* JSONDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DC9711EA1045B0039139D /* JSONDecodeError.swift */; };
+		723DC9741EA106630039139D /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DC9731EA106630039139D /* JSONDecodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		72345D521E9B6B58002731D9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		72345D541E9B6B60002731D9 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		723DC9711EA1045B0039139D /* JSONDecodeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodeError.swift; sourceTree = "<group>"; };
+		723DC9731EA106630039139D /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				72345D521E9B6B58002731D9 /* User.swift */,
 				72345D541E9B6B60002731D9 /* Repository.swift */,
+				723DC9731EA106630039139D /* JSONDecodable.swift */,
 			);
 			name = Response;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				723DC9721EA1045B0039139D /* JSONDecodeError.swift in Sources */,
+				723DC9741EA106630039139D /* JSONDecodable.swift in Sources */,
 				72345D531E9B6B58002731D9 /* User.swift in Sources */,
 				721CB40A1E9B60DF003FD107 /* main.swift in Sources */,
 				72345D551E9B6B60002731D9 /* Repository.swift in Sources */,
