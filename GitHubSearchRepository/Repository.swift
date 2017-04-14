@@ -14,23 +14,23 @@ struct Repository: JSONDecodable {
 
     init(json: Any) throws {
         guard let dictionary = json as? [String : Any] else {
-            throw JSONDecodeErorr.invalidFormat(json: json)
+            throw JSONDecodeError.invalidFormat(json: json)
         }
 
         guard let id = dictionary["id"] as? Int else {
-            throw JSONDecodeErorr.missingValue(key: "id", actualValue: dictionary["id"])
+            throw JSONDecodeError.missingValue(key: "id", actualValue: dictionary["id"])
         }
 
         guard let name = dictionary["name"] as? String else {
-            throw JSONDecodeErorr.missingValue(key: "name", actualValue: dictionary["name"])
+            throw JSONDecodeError.missingValue(key: "name", actualValue: dictionary["name"])
         }
 
         guard let fullName = dictionary["full_name"] as? String else {
-            throw JSONDecodeErorr.missingValue(key: "full_name", actualValue: dictionary["full_name"])
+            throw JSONDecodeError.missingValue(key: "full_name", actualValue: dictionary["full_name"])
         }
 
         guard let ownerObject = dictionary["owner"] else {
-            throw JSONDecodeErorr.missingValue(key: "owner", actualValue: dictionary["owner"])
+            throw JSONDecodeError.missingValue(key: "owner", actualValue: dictionary["owner"])
         }
 
         self.id = id

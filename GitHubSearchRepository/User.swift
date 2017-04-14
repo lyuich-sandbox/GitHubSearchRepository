@@ -12,15 +12,15 @@ struct User: JSONDecodable {
 
     init(json: Any) throws{
         guard let dictionary = json as? [String : Any] else {
-            throw JSONDecodeErorr.invalidFormat(json: json)
+            throw JSONDecodeError.invalidFormat(json: json)
         }
 
         guard let id = dictionary["id"] as? Int else {
-            throw JSONDecodeErorr.missingValue(key: "id", actualValue: dictionary["id"])
+            throw JSONDecodeError.missingValue(key: "id", actualValue: dictionary["id"])
         }
 
         guard let login = dictionary["login"] as? String else {
-            throw JSONDecodeErorr.missingValue(key: "login", actualValue: dictionary["login"])
+            throw JSONDecodeError.missingValue(key: "login", actualValue: dictionary["login"])
         }
 
         self.id = id
