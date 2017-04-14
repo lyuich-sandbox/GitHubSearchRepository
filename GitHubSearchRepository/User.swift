@@ -9,4 +9,21 @@
 struct User {
     let id: Int
     let login: String
+
+    init(json: Any) throws{
+        guard let dictionary = json as? [String : Any] else {
+            throw JSONDecodeErorr.invalidFormat(json: json)
+        }
+
+        guard let id = dictionary["id"] as? Int else {
+            throw JSONDecodeErorr.missingValue(key: "id", actualValue: dictionary["id"])
+        }
+
+        guard let login = dictionary["login"] as? String else {
+            throw JSONDecodeErorr.missingValue(key: "login", actualValue: dictionary["login"])
+        }
+
+        self.id = id
+        self.login = login
+    }
 }
