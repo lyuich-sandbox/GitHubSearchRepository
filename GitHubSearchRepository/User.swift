@@ -6,7 +6,7 @@
 //  Copyright © 2017 lyuich. All rights reserved.
 //
 
-struct User {
+struct User: JSONDecodable {
     let id: Int
     let login: String
 
