@@ -15,6 +15,7 @@
 		723DC9761EA113A30039139D /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DC9751EA113A30039139D /* SearchResponse.swift */; };
 		723DC97D1EA1ED1D0039139D /* GitHubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DC97C1EA1ED1D0039139D /* GitHubRequest.swift */; };
 		723DC97F1EA210910039139D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DC97E1EA210910039139D /* HTTPMethod.swift */; };
+		723DC9811EA214500039139D /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DC9801EA214500039139D /* GitHubAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		723DC9751EA113A30039139D /* SearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		723DC97C1EA1ED1D0039139D /* GitHubRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubRequest.swift; sourceTree = "<group>"; };
 		723DC97E1EA210910039139D /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		723DC9801EA214500039139D /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				723DC97C1EA1ED1D0039139D /* GitHubRequest.swift */,
 				723DC97E1EA210910039139D /* HTTPMethod.swift */,
+				723DC9801EA214500039139D /* GitHubAPI.swift */,
 			);
 			name = Request;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				723DC9721EA1045B0039139D /* JSONDecodeError.swift in Sources */,
+				723DC9811EA214500039139D /* GitHubAPI.swift in Sources */,
 				723DC9741EA106630039139D /* JSONDecodable.swift in Sources */,
 				723DC9761EA113A30039139D /* SearchResponse.swift in Sources */,
 				72345D531E9B6B58002731D9 /* User.swift in Sources */,
