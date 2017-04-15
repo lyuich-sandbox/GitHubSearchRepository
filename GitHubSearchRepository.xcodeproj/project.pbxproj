@@ -16,6 +16,9 @@
 		723DC97D1EA1ED1D0039139D /* GitHubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DC97C1EA1ED1D0039139D /* GitHubRequest.swift */; };
 		723DC97F1EA210910039139D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DC97E1EA210910039139D /* HTTPMethod.swift */; };
 		723DC9811EA214500039139D /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DC9801EA214500039139D /* GitHubAPI.swift */; };
+		723DC9781EA164FD0039139D /* GitHubClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DC9771EA164FD0039139D /* GitHubClientError.swift */; };
+		723DC97A1EA1D8490039139D /* GitHubAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DC9791EA1D8490039139D /* GitHubAPIError.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +44,8 @@
 		723DC97C1EA1ED1D0039139D /* GitHubRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubRequest.swift; sourceTree = "<group>"; };
 		723DC97E1EA210910039139D /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		723DC9801EA214500039139D /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		723DC9771EA164FD0039139D /* GitHubClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubClientError.swift; sourceTree = "<group>"; };
+		723DC9791EA1D8490039139D /* GitHubAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				723DC9711EA1045B0039139D /* JSONDecodeError.swift */,
+				723DC9771EA164FD0039139D /* GitHubClientError.swift */,
+				723DC9791EA1D8490039139D /* GitHubAPIError.swift */,
 			);
 			name = Error;
 			sourceTree = "<group>";
@@ -177,6 +184,8 @@
 				723DC97F1EA210910039139D /* HTTPMethod.swift in Sources */,
 				723DC97D1EA1ED1D0039139D /* GitHubRequest.swift in Sources */,
 				721CB40A1E9B60DF003FD107 /* main.swift in Sources */,
+				723DC9781EA164FD0039139D /* GitHubClientError.swift in Sources */,
+				723DC97A1EA1D8490039139D /* GitHubAPIError.swift in Sources */,
 				72345D551E9B6B60002731D9 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
