@@ -52,6 +52,5 @@ struct GitHubAPIError : JSONDecodable, Error {
 
         self.message = message
         self.fieldErrors = fieldErrors
-
     }
 }
