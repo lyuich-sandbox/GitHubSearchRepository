@@ -36,6 +36,7 @@ struct GitHubAPIError : JSONDecodable, Error {
     }
 
     let message: String
+    let fieldErrors: [FieldError]
 
     init(json: Any) throws {
         guard let dictionary = json as? [String : Any] else {
@@ -46,6 +47,11 @@ struct GitHubAPIError : JSONDecodable, Error {
             throw JSONDecodeError.missingValue(key: "message", actualValue: dictionary["message"])
         }
 
+        let fieldErrorObjects = dictionary["errors"] as? [Any] ?? []
+        let fieldErrors = try fieldErrorObjects.map { return try FieldError(json: $0) }
+
         self.message = message
+        self.fieldErrors = fieldErrors
+
     }
 }
