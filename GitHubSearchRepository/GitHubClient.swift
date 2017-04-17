@@ -23,9 +23,18 @@ class GitHubClient {
             switch (data, response, error) {
             case (_, _, let error?):
                 completion(Result(error: .connectionError(error)))
+            case (let data?, let response?, _):
+                do {
+                    let response = try request.response(from: data, urlResponse: response)
+                    completion(Result(value: response))
+                } catch let error as GitHubAPIError {
+                    completion(Result(error: .apiError(error)))
+                } catch {
+                    completion(Result(error: .responseParseError(error)))
+                }
             }
         }
-        
+
         task.resume()
     }
 }
