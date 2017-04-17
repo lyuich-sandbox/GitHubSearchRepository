@@ -14,4 +14,7 @@ class GitHubClient {
         let session = URLSession(configuration: configuration)
         return session
     }()
+
+    func send<Request : GitHubRequest>(request: Request, completion: (Result<Request.Response, GitHubClientError>) -> Void) {
+    }
 }
