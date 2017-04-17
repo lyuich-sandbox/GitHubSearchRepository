@@ -1,2 +1,2 @@
 # swift-github-search-repository
-API client for GitHub Search API in swift
+CLI client for GitHub Search API in swift
